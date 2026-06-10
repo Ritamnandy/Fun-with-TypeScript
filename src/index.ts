@@ -2,6 +2,7 @@
 // npm i -D typescript
 // npx tsc --init
 
+import "./type"
 
 function greet ( name: string ): string
 {
