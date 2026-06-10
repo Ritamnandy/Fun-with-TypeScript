@@ -279,7 +279,7 @@ interface Add
 
 const adition: Add = ( a, b ) => a + b
 
-console.log( adition( 8, 9 ) );
+// console.log( adition( 8, 9 ) );
 
 
 // type hello = {
@@ -307,3 +307,40 @@ class Login implements role
 {
     union: "admin" | "user" | "guest" = "guest"
 }
+
+
+interface User
+{
+    name: string,
+    bio?: string,
+    readonly password: string
+}
+
+const u1: User = {
+    name: "User name",
+    bio: "",
+    password: "2127861278"
+}
+// u1.password="gdy"
+// console.log( u1.bio );
+
+
+
+
+const object: {
+    name: string,
+    age: number
+} = {
+    name: "userName",
+    age: 20
+}
+
+// console.log( object );
+
+
+import crypto from "node:crypto"
+import os from "node:os"
+
+// console.log( crypto.randomBytes( 32 ).toString( 'hex' ) );
+
+console.log(os.platform());

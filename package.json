@@ -6,9 +6,8 @@
   "scripts": {
     "start": "npx tsc && node dist/index.js",
     "dev": "npx tsc",
-    "test":"npx ts-node src/index.ts"
+    "test": "npx ts-node src/index.ts"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ritamnandy/Fun-with-TypeScript.git"
@@ -16,15 +15,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Ritamnandy/Fun-with-TypeScript/issues"
   },
   "homepage": "https://github.com/Ritamnandy/Fun-with-TypeScript#readme",
   "devDependencies": {
+    "@types/node": "^25.9.2",
     "typescript": "^6.0.3"
   }
 }
-
-
-
