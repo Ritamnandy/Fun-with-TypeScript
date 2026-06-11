@@ -316,11 +316,11 @@ interface User
     readonly password: string
 }
 
-const u1: User = {
-    name: "User name",
-    bio: "",
-    password: "2127861278"
-}
+// const u1: User = {
+//     name: "User name",
+//     bio: "",
+//     password: "2127861278"
+// }
 // u1.password="gdy"
 // console.log( u1.bio );
 
@@ -376,7 +376,7 @@ const user = {
     state: "Delhi"
 }
 
-getUserData( user )
+// getUserData( user )
 
 const array: number[] = [ 1, 2, 3, 4, 56, 7 ]
 
@@ -384,14 +384,48 @@ const str1: string[] = [ "hello" ]
 
 const str2: ( string | number )[] = [ "hello", 12 ]
 
-const str3 :(object | string)[] = [ "hello", { name: "Ritam" } ]
+const str3: ( object | string )[] = [ "hello", { name: "Ritam" } ]
 
-console.log(str3);
+// console.log(str3);
 
-enum userRole {
+enum userRole
+{
     ADMIN = "admin",
     USER = "user",
     GUEST = "guest"
 }
 
-console.log( userRole.ADMIN );
+// console.log( userRole.ADMIN );
+
+// OOP concepts in Typescript
+
+
+
+class User
+{
+    private userName: string
+    private age: number
+    private city: string
+    constructor ( userName: string, age: number, city: string )
+    {
+        this.userName = userName
+        this.age = age
+        this.city = city
+
+    }
+    display ()
+    {
+        console.log( this.userName );
+        console.log( this.age );
+        console.log( this.city );
+        console.log( this );
+
+    }
+}
+
+const user1 = new User( "Ritam", 20, "Faridabad" )
+// console.log(user1);
+user1.display()
+// user1.display()
+
+
