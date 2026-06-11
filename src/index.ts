@@ -373,7 +373,25 @@ const user = {
     name: "Ritam",
     age: 20,
     city: "faridabad",
-    state:"Delhi"
+    state: "Delhi"
 }
 
 getUserData( user )
+
+const array: number[] = [ 1, 2, 3, 4, 56, 7 ]
+
+const str1: string[] = [ "hello" ]
+
+const str2: ( string | number )[] = [ "hello", 12 ]
+
+const str3 :(object | string)[] = [ "hello", { name: "Ritam" } ]
+
+console.log(str3);
+
+enum userRole {
+    ADMIN = "admin",
+    USER = "user",
+    GUEST = "guest"
+}
+
+console.log( userRole.ADMIN );
