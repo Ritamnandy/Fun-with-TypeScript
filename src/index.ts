@@ -344,3 +344,36 @@ import os from "node:os"
 // console.log( crypto.randomBytes( 32 ).toString( 'hex' ) );
 
 // console.log(os.platform());
+
+function getUserData ( type: {
+    name: string,
+    age: number,
+    city: string,
+    state?: string
+} ): void
+{
+    if ( typeof type === "object" )
+    {
+        console.log( `user name ${ type.name }` );
+        console.log( `user age ${ type.age }` );
+        console.log( `user city ${ type.city }` );
+        if ( !type.state )
+        {
+            return
+        }
+        console.log( `user state ${ type.state }` );
+    } else
+    {
+        console.log( 'not an object' );
+
+    }
+}
+
+const user = {
+    name: "Ritam",
+    age: 20,
+    city: "faridabad",
+    state:"Delhi"
+}
+
+getUserData( user )
