@@ -98,3 +98,24 @@ const b: Box<number> = { content: 20 }
 
 
 
+
+interface addFn
+{
+    a: number,
+    b: number
+}
+
+function add ( { a, b }: addFn )
+{
+    console.log( "sum of two number:- " + ( a + b ) );
+
+}
+
+add( { a: 10, b: 20 } )
+
+function add2 ( values: addFn )
+{
+    console.log( values.a + values.b );
+
+}
+add2( { a: 10, b: 20 } )

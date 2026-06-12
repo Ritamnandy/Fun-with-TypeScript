@@ -60,3 +60,5 @@ const fetchData2 = async ( url: string ) =>
 }
 
 fetchData2( "https://jsonplaceholder.typicode.com/todos/5" )
+
+import "./type.js"
