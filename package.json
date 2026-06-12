@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsx src/type.ts",
+    "start": "tsx src/Axios.ts",
     "dev": "npx tsc && node dist/index.js",
     "test": "npx ts-node src/index.ts"
   },
@@ -21,8 +21,12 @@
   },
   "homepage": "https://github.com/Ritamnandy/Fun-with-TypeScript#readme",
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "@types/node": "^25.9.2",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.17.0"
   }
 }
